@@ -1,13 +1,5 @@
-# reveal.js with Webpack
-This repository contains a minimal example showing how to create a [reveal.js](https://github.com/hakimel/reveal.js) presentation using NPM and Webpack to download and bundle reveal.js with your presentation content.
-The [offical documentation](https://github.com/hakimel/reveal.js#installation) tells you do clone or download the whole reveal.js library and add your presentation content next to the code of the library.
-This is bad for separation of concerns and not how third-party libraries are used most times.
-
-In this example reveal.js is just an NPM dependency in the `package.json` like any other third-party library.
-The `index.html` contains almost only the content of the presentation.
-The `src/index.js` configures the presentation e.g. by setting the theme
-and `webpack.config.js` is used to configure Webpack to bundle your presentation and the library code.
-This example still contains boilerplate but the boilerplate to presentation content ratio is greatly improved compared to the official approach.
+# Git Flow CI and CD Persentation
+This repository contains a presentation to explain simple concepts about git flow Continous Integration and Continous Deploy.
 
 # How to Build
 To build the presentation run
@@ -22,4 +14,27 @@ To automatically build the presenation when code changes run
 npm run watch
 ~~~
 
-This doesn't use the Webpack devserver so you have to press F5 in the browser to see the updated results.
+# How to open the presentation
+
+~~~
+npm run server
+~~~
+
+# To build and execute automatically
+
+~~~
+npm run start
+~~~
+
+# References
+
+- [Time to Market](https://www.tcgen.com/time-to-market/#:~:text=Time%20to%20market%20(also%20called,the%20first%20unit%20is%20sold.)
+- [How PIM helps improve time to market](https://www.pimics.com/en/Blog/How-PIM-helps-improve-time-to-market)
+- [MVP - Minimum Viable Product](https://thestartupfactory.tech/how-to-define-your-minimum-viable-product/)
+- [Git Flow Github](https://github.com/nvie/gitflow)
+- [Automate Git Branching with git flow](https://jeffkreeftmeijer.com/git-flow/)
+- [Git Branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Udacity git commit style guide](https://udacity.github.io/git-styleguide/)
+- [Continous Integration and Continous Deploy](https://medium.com/tecnologia-e-afins/ci-cd-continuous-integration-and-continuous-delivery-fb5d0aed4bf5)
+- [CI e CD dentro do GitFlow](http://www2.decom.ufop.br/terralab/entendendo-o-funcionamento-do-cicd-dentro-do-git-flow/)
+

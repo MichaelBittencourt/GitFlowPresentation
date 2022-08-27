@@ -7,7 +7,8 @@
     "build": "webpack -p",
     "watch": "webpack --watch",
     "server_python": "cd dist/ && python3 -m http.server 9090",
-    "server": "cd dist/ && http-server --cors -o ./"
+    "server": "cd dist/ && http-server --cors -o ./",
+    "start": "npm run build && npm run server"
   },
   "dependencies": {
     "http-server": "^14.1.1",
